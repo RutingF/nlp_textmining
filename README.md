@@ -3,7 +3,7 @@
 This repo contains common text mining tasks including: 
 
 * Extracting dates in various formats 
-* Extracting social handles, digits, hyperlinks 
+* Extracting social handles, digits, hyperlinks, percentages 
 * Calculate the average length per row 
 * Parsing web server log data 
 

@@ -92,5 +92,11 @@ class textMining():
         cleaned_text = re.sub(pattern, '', self.data)
         
         return cleaned_text
+    
+    def remove_digits_from_percentage(self, text: pd.Series) -> pd.Series: 
+        if not isinstance(text, pd.Series):
+            raise TypeError("Input text must be a pandas Series.")
+        cleaned_text = text.str.replace(r'\b\d+%?\b', '', regex=True )
+        return cleaned_text 
 
 
